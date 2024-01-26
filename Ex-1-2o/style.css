@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #3d405b;
+}
+
+form.search-bar {
+    display: flex;
+}
+
+.header-menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header a {
+    padding: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+.header a:hover {
+    background-color: #2b2d42;
+}
+
+.header a.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+.header a.logo:hover { 
+    background-color: transparent;
+    color: #ced4da;
+  }
+
+#productsMenu {
+    display: flex;
+    justify-content: center;
+    background-color: #ced4da;
+}
+
+#productsMenu a {
+    padding: 16px;
+    color: #000;
+    text-decoration: none;
+}
+#productsMenu a:hover {
+    background-color: #f8f9fa;
+}
+

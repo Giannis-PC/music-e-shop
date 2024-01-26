@@ -1,0 +1,127 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/******************/
+/***** Header *****/
+/******************/
+.header {
+  display: flex;
+  background-color: #3d405b;
+}
+
+.header-menu { 
+  flex: 1;
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+} 
+
+.header a { 
+  padding: 16px; 
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s; 
+}
+.header a:hover { background-color: #2b2d42; }
+
+form.search-bar { 
+  display: flex; 
+  align-items: center;
+}
+
+.header input[type=text] {
+  font-size: 16px;
+  /*border: none;*/
+}
+
+.header button {
+  border: none;
+  background-color: #ced4da;
+  cursor: pointer;
+}
+.header button:active {  
+  background-color: #3d405b;
+  color: #fff;
+}
+
+i.fa.fa-search { font-size: 18px; }
+
+.header a.logo { 
+  font-weight: 600;
+  font-size: 20px;
+  transition: color 0.5s; 
+}
+.header a.logo:hover { 
+  background-color: transparent;
+  color: #d3d3d3;
+}
+
+/*************************/
+/***** Products Menu *****/
+/*************************/
+#productsMenu {
+  display: flex;
+  justify-content: center;
+  background-color: #ced4da;
+  font-weight: 600;
+}
+
+#productsMenu a {
+  padding: 16px;
+  text-decoration: none;
+  color: #000;
+  transition: background 0.5s;
+}
+#productsMenu a:hover { background-color: #f8f9fa; }
+
+.button-container {
+  background-color:#ced4da;
+  padding: 16px;
+  display: none;
+}
+
+
+/***************** Responsive ****************/
+/*** Header, products menu, banner, footer ***/
+@media (max-width: 760px) {
+
+    .button-container {
+      display: block;
+      text-align: center;
+    }
+  
+    #productsMenu {
+      display: none;
+      text-align: center;
+    }
+    
+    .header, .header-menu, 
+    #productsMenu, .footer {
+      flex-direction: column;
+    }
+  
+    .header a, #productsMenu a, form.search-bar {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .header button {
+      border: 1px solid #ced4da;
+    }
+  
+    .header input[type=text] {
+      width: 40%;
+    }
+}
+
+

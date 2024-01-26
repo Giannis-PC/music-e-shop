@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+div.a {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 3px solid red;
+}
+
+div.b {
+    width: 100px;
+    height: 100px;
+    border: 3px solid green;
+    position: absolute;
+
+    /* 400 x 50% = 200 pixels from top. 
+    Το αντικείμενο είναι διαστάσεων 100 pixels ύψος
+    άρα έχει διάστημα 100 Pixels από κάτω (bottom),
+    άρα δεν είναι κεντραρισμένο ακόμη.*/
+    top: 50%; 
+
+    /*left: 50%;*/
+
+    /*200 - 50% = -100 pixels from top.
+    Κεντράρισμα στους άξονες x, y.*/
+    transform: translate(0%, -50%);     
+} 
+</style>
+
+</head>
+<body>
+    <div class="a">
+        <div class="b"></div>
+    </div>
+</body>
+</html>
